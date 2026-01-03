@@ -9,4 +9,17 @@ class Product extends Model
 {
     /** @use HasFactory<\Database\Factories\ProductFactory> */
     use HasFactory;
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var list<string>
+     */
+
+    protected $fillable = [
+        'name',
+        'description',
+        'price',
+        'stock',
+        'image',
+    ];
 }
