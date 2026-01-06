@@ -36,12 +36,6 @@ class ProductFactory extends Factory
         ];
     }
 
-    public function expensive(): static
-    {
-        return $this->state(fn () => [
-            'price' => $this->faker->randomFloat(2, 1500, 5000),
-        ]);
-    }
 
     public function outOfStock(): static
     {
